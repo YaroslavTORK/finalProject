@@ -1,0 +1,128 @@
+/*#region ====== Global styles ====== */
+:root {
+  /* colors variables */
+  --white: rgb(255, 255, 255);
+
+  --neutral: rgb(127, 127, 127);
+  --neutral-light: rgb(178, 178, 178);
+  --neutral-lighter: rgb(216, 216, 216);
+  --neutral-lightest: rgb(242, 242, 242);
+  --neutral-dark: rgb(76, 76, 76);
+  --neutral-darker: rgb(25, 25, 25);
+  --neutral-darkest: rgb(0, 0, 0);
+
+  --coral: rgb(204 101 52);
+  --coral-light: rgb(255 165 122);
+  --coral-lighter: rgb(255 229 217);
+  --coral-lightest: rgb(255 242 236);
+  --coral-dark: rgb(204 101 52);
+  --coral-darker: rgb(102 50 26);
+  --coral-darkest: rgb(76 38 19);
+
+  --red: rgb(176 1 1);
+
+  /* прозорості */
+  --white-transparent: rgba(255, 255, 255, 0);
+  --white-5: rgba(255, 255, 255, 0.05);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --white-15: rgba(255, 255, 255, 0.15);
+  --white-20: rgba(255, 255, 255, 0.2);
+  --white-30: rgba(255, 255, 255, 0.3);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-60: rgba(255, 255, 255, 0.6);
+
+  --neutral-darkest-5: rgba(0, 0, 0, 0.05);
+  --neutral-darkest-10: rgba(0, 0, 0, 0.1);
+  --neutral-darkest-15: rgba(0, 0, 0, 0.15);
+  --neutral-darkest-20: rgba(0, 0, 0, 0.2);
+  --neutral-darkest-30: rgba(0, 0, 0, 0.3);
+  --neutral-darkest-40: rgba(0, 0, 0, 0.4);
+  --neutral-darkest-50: rgba(0, 0, 0, 0.5);
+  --neutral-darkest-60: rgba(0, 0, 0, 0.6);
+
+  /* back-/foreground colors */
+  --background-primary: var(--white);
+  --foreground-primary: var(--neutral-lightest);
+  --background-secondary: var(--coral-lightest);
+  --foreground-secondary: var(--coral-lighter);
+
+  /* text colors */
+  --text-primary: var(--neutral-darkest);
+  --text-secondary: var(--coral-darkest);
+}
+
+/* reset styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Container styles */
+.container {
+  min-width: 320px;
+  width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 0 64px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+/*#endregion ====== Global styles ====== */
